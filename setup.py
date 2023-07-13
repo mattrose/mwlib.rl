@@ -8,7 +8,7 @@ import os, sys
 from setuptools import setup
 from distutils.command.sdist import sdist as _sdist
 
-install_requires = ["mwlib>=0.15.0", "pygments>=1.4", "mwlib.ext>=0.12.4"]
+install_requires = ["mwlib>=0.15.0", "pygments>=1.4, <2.6", "mwlib.ext>=0.12.4","reportlab>=3.5, <3.6"]
 
 
 class sdist(_sdist):
